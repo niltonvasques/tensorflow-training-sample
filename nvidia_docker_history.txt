@@ -1,0 +1,55 @@
+    1  bash nilton_trainning_pipes_and_coins.sh 2
+    2  cat nilton_trainning_pipes_and_coins.sh 
+    3  export PYTHONPATH=$PYTHONPATH:'local path':`pwd`/slim
+    4  python3 object_detection/model_main.py --logtostderr --train_dir=/home/niltonvasques/Development/datasets/training/ --pipeline_config_path=/home/niltonvasques/Development/datasets/training/faster_rcnn_inception_v2_coco_2018_01_28/pipeline.config
+    5  ls
+    6  cd ..
+    7  ls samples/
+    8  ls
+    9  cd research/
+   10  ls
+   11  ls object_detection/samples/configs/
+   12  python3 object_detection/model_main.py --logtostderr --train_dir=/home/niltonvasques/Development/datasets/training/ --pipeline_config_path=/home/niltonvasques/Development/datasets/training/faster_rcnn_inception_v2_pets.config 
+   13  python object_detection/dataset_tools/create_pet_tf_record.py --label_map_path=object_detection/data/pet_label_map.pbtxt --data_dir=/home/niltonvasques/Development/datasets/pets/ --output_dir=/home/niltonvasques/Development/datasets/pets/
+   14  python3 object_detection/dataset_tools/create_pet_tf_record.py --label_map_path=object_detection/data/pet_label_map.pbtxt --data_dir=/home/niltonvasques/Development/datasets/pets/ --output_dir=/home/niltonvasques/Development/datasets/pets/
+   15  sed -s "s|PATH|data/g" object_detection/samples/configs/faster_rcnn_resnet101_pets.config 
+   16  sed -s "s|PATH|data|g" object_detection/samples/configs/faster_rcnn_resnet101_pets.config 
+   17  sed -s "s|PATH|/home/niltonvasques/Development/datasets/pets|g" object_detection/samples/configs/faster_rcnn_resnet101_pets.config 
+   18  sed -s "s|PATH_TO_BE_CONFIGURED|/home/niltonvasques/Development/datasets/pets|g" object_detection/samples/configs/faster_rcnn_resnet101_pets.config 
+   19  sed -s "s|PATH_TO_BE_CONFIGURED|/home/niltonvasques/Development/datasets/pets|g" object_detection/samples/configs/faster_rcnn_resnet101_pets.config > /home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config
+   20  python3 object_detection/model_main.py --logtostderr --train_dir=/home/niltonvasques/Development/datasets/pets/ --pipeline_config_path=/home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config 
+   21  cp object_detection/data/pet_label_map.pbtxt /home/niltonvasques/Development/datasets/pets/
+   22  python3 object_detection/model_main.py --logtostderr --train_dir=/home/niltonvasques/Development/datasets/pets/ --pipeline_config_path=/home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config 
+   23  fg
+   24  ls
+   25  ls /tmp/
+   26  ls /tmp/tmpq1hpx0_x/
+   27  ls /tmp/tmpq1hpx0_x/ -l
+   28  cp -Rf /tmp/tmpq1hpx0_x/model.ckpt-47617.* .
+   29  ls
+   30  python3 object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path /home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config --trained_checkpoint_prefix model.ckpt-8857 --output_directory exported_graphs
+   31  ls exported_graphs/
+   32  ls exported_graphs/ -lh
+   33  ls exported_graphs/ -lhls
+   34  #python3 object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path /home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config --trained_checkpoint_prefix model.ckpt- --output_directory exported_graphs
+   35  ls
+   36  #python3 object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path /home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config --trained_checkpoint_prefix model.ckpt-47617 --output_directory exported_graphs
+   37  python3 object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path /home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config --trained_checkpoint_prefix model.ckpt-47617 --output_directory exported_graphs
+   38  python3 object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path /home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config --trained_checkpoint_prefix model.ckpt-47617 --output_directory exported_graphs2
+   39  python3 eval.py --logtosderr --checkpoint_dir=exported_graphs/ --eval_dir=eval/ --pipeline_config_path=/home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config 
+   40  python3 object_detection/eval_util.py --logtosderr --checkpoint_dir=exported_graphs/ --eval_dir=eval/ --pipeline_config_path=/home/niltonvasques/Development/datasets/pets/faster_rcnn_resnet101_pets.config 
+   41  ls
+   42  ls eval/
+   43  ls
+   44  vim inference.py
+   45  apt install vim
+   46  ls
+   47  jupyter object_detection/object_detection_tutorial.ipynb 
+   48  jupyter notebook object_detection/object_detection_tutorial.ipynb 
+   49  jupyter notebook object_detection/object_detection_tutorial.ipynb --allow-rot
+   50  jupyter notebook object_detection/object_detection_tutorial.ipynb --allow-root
+   51  ls
+   52  history
+   53  history | less
+   54  history 
+   55  history > /home/niltonvasques/Development/datasets/pets/nvidia_docker_history.txt

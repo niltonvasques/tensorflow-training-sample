@@ -1,0 +1,72 @@
+    1  curl localhost:6006
+    2  curl http://localhost:6006
+    3  nvidia-smi
+    4  exit
+    5  tensorboard 
+    6  tensorboard --logdir=training
+    7  tensorboard --logdir=/home/niltonvasques/Development/datasets/pets/
+    8  nvidia-smi 
+    9  tensorboard --logdir=/home/niltonvasques/Development/datasets/pets/
+   10  ls /tmp/
+   11  tensorboard --logdir=/tmp/
+   12  cd models-722f345ed70e33de6bbd178d4f56b83bcf10e9aa/research/
+   13  ls
+   14  pwd
+   15  ls
+   16  cd exported_graphs/
+   17  ls
+   18  pwd
+   19  cd ..
+   20  cp -Rf exported_graphs /tmp/
+   21  cd /tmp/
+   22  ls
+   23  cd exported_graphs/
+   24  pwd
+   25  ls 
+   26  ls saved_model/
+   27  ls saved_model/variables/
+   28  #cp /home/niltonvasques/Development/datasets/pets/images/Maine_Coon_1.jpg 
+   29  cd ..
+   30  mkdir test_images
+   31  cp /home/niltonvasques/Development/datasets/pets/images/Maine_Coon_1.jpg test_images/
+   32  cp /home/niltonvasques/Development/datasets/pets/images/Siamese_100.jpg test_images/
+   33  cd test_images/
+   34  ls
+   35  mv Maine_Coon_1.jpg image1.jpg
+   36  mv Siamese_100.jpg image2.jpg
+   37  ls
+   38  pwd
+   39  cp /home/niltonvasques/Pictures/Simão/IMG_4887.JPG image3.jpg
+   40  cp /home/niltonvasques/Pictures/Simão/IMG_4887.jpg image4.jpg
+   41  ls -lh
+   42  cd ...
+   43  cd ..
+   44  cp /home/niltonvasques/Development/python/training_pipe_detector/models-722f345ed70e33de6bbd178d4f56b83bcf10e9aa/research/exported_graphs2 .
+   45  cp -Rf /home/niltonvasques/Development/python/training_pipe_detector/models-722f345ed70e33de6bbd178d4f56b83bcf10e9aa/research/exported_graphs2 .
+   46  ls
+   47  ls exported_graphs2/
+   48  ls exported_graphs/
+   49  cp /home/niltonvasques/snow.jpg test_images/image4.jpg 
+   50  cp /home/niltonvasques/snow.jpg test_images/image0.jpg
+   51  mv  test_images/image0.jpg image1.jpg
+   52  ls
+   53  mv image1.jpg  test_images/image1.jpg 
+   54  cp /home/niltonvasques/snow.jpg test_images/image1.jpg
+   55  python
+   56  ls
+   57  du -hc
+   58  cp -Rf exported_graphs /home/niltonvasques/Development/datasets/pets/
+   59  cd
+   60  ls
+   61  cd /home/niltonvasques/Development/python/training_pipe_detector/models-722f345ed70e33de6bbd178d4f56b83bcf10e9aa/
+   62  ls
+   63  cd research/
+   64  ls
+   65  cp object_detection/object_detection_tutorial.ipynb /home/niltonvasques/Development/datasets/pets/exported_graphs/
+   66  ls
+   67  cd /tmp/
+   68  ls
+   69  cp -Rf test_images/ /home/niltonvasques/Development/datasets/pets/exported_graphs/
+   70  cd
+   71  history
+   72  history > /home/niltonvasques/Development/datasets/pets/nvidia_docker_history_pane2.txt 
