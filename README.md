@@ -25,3 +25,7 @@ Starting a NVIDIA-DOCKER with tensorflow
 # Detecting
 
     jupyter notebook object_detection_tutorial.ipynb
+
+## References
+
+https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_pets.md
